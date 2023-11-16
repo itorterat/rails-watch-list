@@ -1,0 +1,12 @@
+<h1 class="mb-5">All lists</h1>
+
+<div class="d-flex flex-wrap gap-4" >
+  <% @lists.each do |list| %>
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <h5 class="card-title text-center"><%= list.name %></h5>
+        <%= link_to "See details", list_path(list), class: "btn btn-dark w-100"%>
+      </div>
+    </div>
+  <% end %>
+</div>
