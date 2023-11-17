@@ -1,12 +1,18 @@
-<h1 class="mb-5">All lists</h1>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(<%= image_path 'cover.jpg' %>);">
+  <div class="container">
+    <h1>My lists</h1>
+  </div>
+</div>
 
-<div class="d-flex flex-wrap gap-4" >
-  <% @lists.each do |list| %>
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <h5 class="card-title text-center"><%= list.name %></h5>
-        <%= link_to "See details", list_path(list), class: "btn btn-dark w-100"%>
+<div class="container mt-5">
+  <div class="d-flex flex-wrap gap-4" >
+    <% @lists.each do |list| %>
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title text-center"><%= list.name %></h5>
+          <%= link_to "See details", list_path(list), class: "btn btn-dark w-100"%>
+        </div>
       </div>
-    </div>
-  <% end %>
+    <% end %>
+  </div>
 </div>

@@ -10,3 +10,13 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
+
+.logo {
+  margin-right: auto;
+}
+
+@media(max-width: 768px) {
+  .logo {
+    margin: 16px 0 16px;
+  }
+}
