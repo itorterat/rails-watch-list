@@ -45,6 +45,7 @@ gem "bootsnap", require: false
 # Use Sass to process CSS
 gem "autoprefixer-rails"
 gem "bootstrap", "~> 5.2"
+gem "cloudinary"
 gem "dotenv-rails"
 gem "font-awesome-sass", "~> 6.1"
 gem "sassc-rails"
